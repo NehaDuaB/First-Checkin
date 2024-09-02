@@ -30,3 +30,488 @@ Verify Data and Downloaded Chat Messages:
 Open the downloaded chat files to ensure they are complete and uncorrupted.
 Verify that the downloaded data includes timestamps, user names, and full message content.
 Ensure that all data collected from the team and channels is accurate and up-to-date.
+
+
+////////////////////////////////////////////////////
+Test Scenario: Sharing Files in Microsoft Teams and Verifying Accessibility Over Multiple Days
+Objective:
+To verify that users can share one or more files within a Microsoft Teams team, share files on different days, and ensure that these files remain accessible, intact, and properly managed over time using both the M365 client and the web interface.
+
+Preconditions:
+The user has access to Microsoft Teams through both the M365 client and the web interface.
+The user has appropriate permissions to share files within a team.
+Microsoft Teams is set up and operational on both the M365 client and the web.
+A stable internet connection is available for sharing and accessing files.
+Test Scenario 1: Sharing Files in Teams via M365 Client
+Test Steps:
+
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Select the Team and Channel:
+
+Choose a team and channel where you will share the files (e.g., "Project Team" in the "General" channel).
+Day 1 - Share the First File:
+
+On the first day, click on the "Attach" (paperclip) icon in the message box within the selected channel.
+Choose "Upload from my computer" or "OneDrive" to select the file you want to share.
+Upload and send the file (e.g., a .docx document) in the channel.
+Verify that the file appears in the chat and in the "Files" tab of the channel.
+Verify File Accessibility and Integrity:
+
+Open the shared file to ensure it is accessible and uncorrupted.
+Check that other team members can view, download, or edit the file based on their permissions.
+Day 2 - Share Another File:
+
+On the second day, repeat the process to share another file (e.g., an .xlsx spreadsheet) in the same or a different channel.
+Verify that the new file is shared successfully and appears in the chat and the "Files" tab.
+Verify Files from Previous Day:
+
+Ensure that the file shared on Day 1 is still accessible and intact.
+Confirm that there are no issues with the file’s visibility or accessibility.
+Day 3 - Share Multiple Files:
+
+On the third day, share multiple files (e.g., a .pdf document and a .pptx presentation) in the selected channel.
+Verify that all files are uploaded successfully and appear in the chat and the "Files" tab.
+Cross-Check All Shared Files:
+
+Review all files shared over the past three days to ensure they are all accessible and functional.
+Check the "Files" tab to confirm that all shared files are listed correctly.
+
+////////////////////////////////////////////////////////////////
+Test Scenario 1: Deleting Messages in Microsoft Teams
+Objective:
+To verify that a user can create and delete their own messages in Microsoft Teams using the M365 client.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Create a New Message:
+
+Navigate to a team and channel.
+Type and send a new message in the chat (e.g., "Test message for deletion").
+Delete the Message by the Owner:
+
+After sending the message, hover over it and click on the "..." (More options).
+Select "Delete" to remove the message.
+Confirm that the message is deleted and is replaced with "This message has been deleted."
+Verify Deletion:
+
+Ensure that the message is no longer visible in the chat for both the sender and other team members.
+Repeat:
+
+Repeat the process in different channels and with different types of messages (e.g., text, messages with attachments) to ensure consistent behavior.
+Test Scenario 2: Deleting Shared Files in Microsoft Teams
+Objective:
+To verify that a user can create, share, and then delete their own file attachments in Microsoft Teams using the M365 client.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Share a File Attachment:
+
+Navigate to a team and channel.
+Click on the "Attach" (paperclip) icon, select a file, and upload it to the chat.
+Send the message with the file attachment.
+Delete the Shared File by the Owner:
+
+After sharing the file, click on the "Files" tab in the channel.
+Locate the shared file, click on the "..." (More options), and select "Delete."
+Confirm the deletion.
+Verify Deletion:
+
+Ensure that the file is no longer visible in the "Files" tab and that any links to the file in the chat are removed or disabled.
+Repeat:
+
+Repeat the process with different file types (e.g., .docx, .pdf, images) to ensure consistent behavior.
+Test Scenario 3: Adding Emojis in Microsoft Teams Chats
+Objective:
+To verify that a user can add emojis in different Teams chat conversations using the M365 client.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Navigate to a Team and Channel:
+
+Select a team and channel where you want to add emojis in a chat message.
+Add Emojis in Chat Messages:
+
+Click on the emoji icon in the message input box.
+Select and insert various emojis into the message (e.g., smiley faces, thumbs up).
+Send the message.
+Verify Emojis:
+
+Ensure that the emojis are displayed correctly in the chat message.
+Confirm that other users can see the emojis in their chat window.
+Repeat:
+
+Repeat the process in different teams and channels to verify consistent behavior.
+Test Scenario 4: Inserting GIFs and Stickers in Microsoft Teams Chats
+Objective:
+To verify that a user can insert GIFs and stickers into different Teams chat conversations using the M365 client.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Navigate to a Team and Channel:
+
+Select a team and channel where you want to add GIFs and stickers.
+Insert a GIF:
+
+Click on the GIF icon in the message input box.
+Search for a relevant GIF and insert it into the message.
+Send the message.
+Insert a Sticker:
+
+Click on the sticker icon in the message input box.
+Browse through the available stickers and insert one into the message.
+Send the message.
+Verify GIFs and Stickers:
+
+Ensure that the GIFs and stickers are displayed correctly in the chat message.
+Confirm that other users can see the GIFs and stickers in their chat window.
+Repeat:
+
+Repeat the process in different teams and channels to verify consistent behavior.
+Test Scenario 5: Inline Replies with Images and Reactions
+Objective:
+To verify that a user can reply to a message inline in a Teams chat, include images in the reply, and add reactions using the M365 client.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Navigate to a Team and Channel:
+
+Select a team and channel where you want to reply to a message inline.
+Reply Inline to a Message:
+
+Hover over a message in the chat and click on "Reply."
+Type your reply and insert images by clicking on the "Attach" icon and selecting the images.
+Send the reply.
+Add Reactions to the Original Message:
+
+Hover over the original message and select a reaction from the available list (e.g., thumbs up, heart).
+Confirm that the reaction is applied to the message.
+Verify Inline Reply and Reactions:
+
+Ensure that the inline reply, including images, is correctly displayed under the original message.
+Confirm that the reaction is visible to all users in the chat.
+Repeat:
+
+Repeat the process in different teams and channels to verify consistent behavior.
+Test Scenario 6: Adding Reactions to Messages
+Objective:
+To verify that a user can add different reactions to messages in Teams chat using the M365 client.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Navigate to a Team and Channel:
+
+Select a team and channel where you want to add reactions to messages.
+Add Reactions to Messages:
+
+Hover over a message in the chat and select different reactions (e.g., thumbs up, heart, laugh).
+Apply each reaction to the message.
+Verify Reactions:
+
+Ensure that the reactions are displayed correctly on the message.
+Confirm that the reactions are visible to other users in the chat.
+Repeat:
+
+Repeat the process with multiple messages in different teams and channels to verify consistent behavior.
+Test Scenario 7: Spreading Chat Messages Across Multiple Days
+Objective:
+To verify that chat messages, including deleted messages, shared files, emojis, GIFs, stickers, inline replies, and reactions, are spread across multiple days in Microsoft Teams.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Day 1:
+
+Create and delete a message.
+Share a file and delete it.
+Add emojis in chat messages.
+Day 2:
+
+Insert GIFs and stickers into chat messages.
+Reply inline to a message with images and reactions.
+Day 3:
+
+Add different reactions to multiple messages.
+Verify that all actions from previous days are intact and functioning as expected.
+Day 4 and Day 5:
+
+Repeat a combination of the actions above, ensuring that messages, files, and other elements are correctly managed over multiple days.
+Verify Across All Days:
+
+Review the chat history to ensure that all messages, files, emojis, GIFs, stickers, inline replies, and reactions are consistent and accessible over the span of multiple days.
+Expected Results:
+Message and File Deletion:
+
+Messages and files should be deletable by the owner, with the deletions reflected in all user views.
+Emojis, GIFs, and Stickers:
+
+Emojis, GIFs, and stickers should be visible to all users and correctly displayed in the chat.
+Inline Replies and Reactions:
+
+Inline replies, including images and reactions, should be correctly associated with the original message and visible to all users.
+Cross-Day Consistency:
+
+Actions performed across multiple days should be preserved, with no loss of data or functionality.
+Cross-Platform Consistency:
+
+All tests should yield consistent results when performed on both the M365 client and the web interface.
+This comprehensive set of test scenarios ensures that various features within Microsoft Teams are functioning correctly, both on a single day and across multiple days, and that they are consistently accessible across platforms.
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+Test Scenario 1: Creating 1:1 Chat with 50+ Messages
+Objective:
+To verify that a user can create a 1:1 chat with at least 50 messages and ensure that the chat functions correctly.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Create a 1:1 Chat:
+
+Start a new chat with another user by selecting "New Chat" and entering the user’s name.
+Send 50+ Messages:
+
+Send a series of at least 50 messages in the chat.
+Include a variety of text, emojis, and short messages to simulate normal conversation.
+Verify Message Delivery:
+
+Ensure that all messages are delivered without delays and are visible to both participants.
+Test Scenario 2: Creating 1
+Chat with 50+ Messages
+Objective:
+To verify that a user can create a 1
+chat with 5 users and at least 50 messages and ensure that the chat functions correctly.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Create a 1
+Chat:
+
+Start a new chat with 5 users by selecting "New Chat," entering the names of 5 users, and starting the conversation.
+Send 50+ Messages:
+
+Send a series of at least 50 messages in the chat.
+Ensure that all participants can see and respond to the messages.
+Verify Message Delivery:
+
+Confirm that all messages are delivered without delays and are visible to all participants.
+Test Scenario 3: Creating Chats with Maximum Load (1K+ Messages)
+Objective:
+To verify that a user can create chats with 1,000+ messages for both 1:1 and 1
+chats and ensure that the chat functions correctly under high load.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Create a 1:1 Chat with 1K+ Messages:
+
+Start a new chat with another user.
+Send 1,000+ messages in the chat, ensuring a mix of text, emojis, and short phrases.
+Create a 1
+Chat with 1K+ Messages:
+
+Start a new chat with 5 users.
+Send 1,000+ messages in the chat, ensuring participation from all users.
+Monitor Performance:
+
+Monitor the performance of the chat for both 1:1 and 1
+conversations, checking for delays or issues in message delivery.
+Verify Message Delivery:
+
+Confirm that all messages are delivered and visible to all participants without issues.
+Test Scenario 4: Adding Emojis in 1:1 and 1
+Chats
+Objective:
+To verify that a user can add emojis in both 1:1 and 1
+chats using the M365 client.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Add Emojis in 1:1 Chat:
+
+Open a 1:1 chat and add emojis to the messages.
+Send the messages and confirm that the emojis display correctly.
+Add Emojis in 1
+Chat:
+
+Open a 1
+chat with 5 users and add emojis to the messages.
+Send the messages and confirm that the emojis display correctly.
+Verify Display:
+
+Ensure that the emojis are visible and correctly rendered for all participants in both 1:1 and 1
+chats.
+Test Scenario 5: Inline Replies in 1:1 and 1
+Chats
+Objective:
+To verify that a user can reply to messages using inline replies in both 1:1 and 1
+chats.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Use Inline Replies in 1:1 Chat:
+
+Open a 1:1 chat and hover over a message.
+Click "Reply" and respond inline to the original message.
+Include text, emojis, and any relevant media.
+Use Inline Replies in 1
+Chat:
+
+Open a 1
+chat with 5 users and hover over a message.
+Click "Reply" and respond inline to the original message.
+Include text, emojis, and any relevant media.
+Verify Inline Replies:
+
+Ensure that the replies are correctly associated with the original messages and visible to all participants.
+Test Scenario 6: Sharing Files in 1:1 and 1
+Chats
+Objective:
+To verify that a user can share files in both 1:1 and 1
+chats using the M365 client.
+
+Test Steps:
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Share Files in 1:1 Chat:
+
+Open a 1:1 chat and click on the "Attach" (paperclip) icon.
+Share one or more files in the chat and verify that the recipient can access them.
+Share Files in 1
+Chat:
+
+Open a 1
+chat with 5 users and click on the "Attach" icon.
+Share one or more files in the chat and verify that all participants can access them.
+Verify File Accessibility:
+
+Ensure that all shared files are accessible and downloadable by the intended recipients.
+Test Scenario 7: Spreading the Sharing of Files Over Multiple Days
+Objective:
+To verify that a user can share files over multiple days in both 1:1 and 1
+chats using the M365 client.
+
+Test Steps:
+Day 1 - Share Files in 1:1 Chat:
+
+On the first day, share a file in a 1:1 chat.
+Verify that the recipient can access and download the file.
+Day 2 - Share Files in 1
+Chat:
+
+On the second day, share a file in a 1
+chat with 5 users.
+Verify that all participants can access and download the file.
+Day 3 - Share Additional Files:
+
+On the third day, share additional files in both 1:1 and 1
+chats.
+Ensure that all files are accessible and functional.
+Verify File Accessibility Over Time:
+
+Confirm that all files shared over multiple days remain accessible and intact in both chat types.
+Test Scenario 8: Deleting Messages in 1:1 and 1
+Chats
+Objective:
+To verify that a user can delete their own messages in both 1:1 and 1
+chats using the M365 client.
+
+Test Steps:
+Delete Messages in 1:1 Chat:
+
+Open a 1:1 chat and hover over a message you sent.
+Click on "..." (More options) and select "Delete."
+Verify that the message is deleted and the deletion is visible to both participants.
+Delete Messages in 1
+Chat:
+
+Open a 1
+chat with 5 users and hover over a message you sent.
+Click on "..." and select "Delete."
+Verify that the message is deleted and the deletion is visible to all participants.
+Test Scenario 9: Deleting Shared Files in 1:1 and 1
+Chats
+Objective:
+To verify that a user can delete shared files in both 1:1 and 1
+chats using the M365 client.
+
+Test Steps:
+Delete Files in 1:1 Chat:
+
+Open a 1:1 chat, navigate to the shared file, and delete it.
+Verify that the file is removed from the chat and that the recipient can no longer access it.
+Delete Files in 1
+Chat:
+
+Open a 1
+chat with 5 users, navigate to the shared file, and delete it.
+Verify that the file is removed from the chat and that none of the participants can access it.
+Test Scenario 10: Spreading Chat Messages Across Multiple Days
+Objective:
+To verify that a user can send chat messages, including messages with inline replies, emojis, and files, over multiple days in both 1:1 and 1
+chats.
+
+Test Steps:
+Day 1 - Send Messages in 1:1 Chat:
+
+Send a series of messages in a 1:1 chat, including text, emojis, and files.
+Day 2 - Send Messages in 1
+Chat:
+
+Send a series of messages in a 1
+chat with 5 users, including text, inline replies, and files.
+Day 3 and Beyond - Continue Messaging:
+
+Continue sending messages in both chat types over multiple days.
+Ensure that all messages, files, and inline replies are preserved and accessible.
+Verify Consistency and Accessibility:
+
+Review the chat history for all days to ensure that messages and files remain accessible and intact.
+Expected Results:
+Message Creation and Deletion:
+
+Users should be able to create and delete messages in both 1:1 and 1
+chats.
+Emojis, Inline Replies, and File Sharing:
+
+Emojis, inline replies, and file-sharing functionality should work consistently across all chat types.
+Chat Performance Under Load:
+
+Chats should handle 1,000+ messages without performance issues.
+Cross-Day Consistency:
+
+Messages and files should remain accessible and functional over multiple days.
+File Management:
+
+Users should be able to delete shared files, with deletions correctly reflected for all participants.
+This comprehensive set of test scenarios ensures that various features within Microsoft Teams are functioning correctly in 1:1 and 1
+chats, across multiple days, and under different conditions.
+
+
+
+
+
