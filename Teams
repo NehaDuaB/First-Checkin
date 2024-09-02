@@ -1,1 +1,32 @@
+Test Scenario 1: Collecting Team and Channel Data via M365 Client
+Test Steps:
 
+Login to Microsoft Teams via M365 Client:
+
+Log in to the Microsoft Teams client using valid credentials.
+Identify Teams and Channels for Data Collection:
+
+Select the teams and channels from which you want to collect data (e.g., "Project Team," "Marketing Team").
+Ensure that these teams and channels have active chat histories to be downloaded.
+Access Team and Channel Information:
+
+Click on the "..." (More options) next to the team name and select "Manage team."
+Collect data on the team, such as the number of members, channels, and any relevant settings or configurations.
+Document the data for reference.
+Access Channel-Specific Data:
+
+For each channel within the selected teams, click on the "..." (More options) next to the channel name and select "Manage channel."
+Collect data on channel members, settings, and any specific configurations related to the channel.
+Document the data for reference.
+Download Chat Messages Linked with Teams/Channels:
+
+Navigate to the channel where you want to download chat messages.
+Click on the "..." (More options) next to the channel name and select "Open in SharePoint" (if available).
+In SharePoint, navigate to the "Documents" library where Teams stores files and chat logs.
+Locate the chat logs, which might be in the form of .txt, .csv, or another format.
+Download the chat messages to your local system.
+Verify Data and Downloaded Chat Messages:
+
+Open the downloaded chat files to ensure they are complete and uncorrupted.
+Verify that the downloaded data includes timestamps, user names, and full message content.
+Ensure that all data collected from the team and channels is accurate and up-to-date.
